@@ -5,12 +5,13 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: danigrb/jam2021
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: miriaminfiore-arm
 
-imagePullSecrets: []
+imagePullSecrets: |
+        - name: regcred
 nameOverride: ""
 fullnameOverride: ""
 
