@@ -8,7 +8,7 @@ image:
   repository: danigrb/jam2021
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: miriaminfiore-arm
+  tag: miriaminfiore-test-arm
 
 imagePullSecrets:
         - name: regcred
