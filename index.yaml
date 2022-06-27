@@ -3,6 +3,16 @@ entries:
   miriaminfiore:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-06-27T20:25:17.225317069Z"
+    description: A Helm chart for Kubernetes
+    digest: 2d7dba1124f3a78a47e71bbbe86361ae259831b80e01e5ba9e11ee155df16d19
+    name: miriaminfiore
+    type: application
+    urls:
+    - https://github.com/danigrb/miriaminfiore-helm/releases/download/miriaminfiore-0.1.5/miriaminfiore-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-06-27T20:15:36.645800391Z"
     description: A Helm chart for Kubernetes
     digest: 7c4037cdadfc02a38e800bf240bcc3a41850cadb9f7e00bb5d9c8f175cb7e33c
@@ -51,4 +61,4 @@ entries:
     urls:
     - https://github.com/danigrb/miriaminfiore-helm/releases/download/miriaminfiore-0.1.0/miriaminfiore-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-27T20:15:36.645901591Z"
+generated: "2022-06-27T20:25:17.225639076Z"
