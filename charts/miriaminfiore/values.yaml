@@ -48,14 +48,14 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     kubernetes.io/ingress.class: traefik
   hosts:
-    - host: miriaminfiore.it
+    - host: www.miriaminfiore.it
       paths:
         - path: /test/
           pathType: Prefix
   tls: 
     - secretName: miriaminfiore-it-tls
       hosts:
-        - miriaminfiore.it
+        - www.miriaminfiore.it
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
