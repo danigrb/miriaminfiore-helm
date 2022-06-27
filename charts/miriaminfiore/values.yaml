@@ -8,7 +8,7 @@ image:
   repository: danigrb/jam2021
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: miriaminfiore-test-arm
+  tag: miriaminfiore-arm
 
 imagePullSecrets:
         - name: regcred
@@ -48,14 +48,14 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     kubernetes.io/ingress.class: traefik
   hosts:
-    - host: www.miriaminfiore.it
+    - host: www.test.miriaminfiore.it
       paths:
-        - path: /test/
+        - path: /
           pathType: Prefix
   tls: 
-    - secretName: miriaminfiore-it-tls
+    - secretName: test-miriaminfiore-it-tls
       hosts:
-        - www.miriaminfiore.it
+        - www.test.miriaminfiore.it
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
