@@ -1,4 +1,4 @@
-# Default values for miriaminfiore.
+# Default values for backend-helm.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
@@ -8,9 +8,9 @@ image:
   repository: danigrb/jam2021
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: miriaminfiore-arm
+  tag: backend-arm
 
-imagePullSecrets:
+imagePullSecrets: 
         - name: regcred
 nameOverride: ""
 fullnameOverride: ""
@@ -48,14 +48,14 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     kubernetes.io/ingress.class: traefik
   hosts:
-    - host: www.test.miriaminfiore.it
+    - host: www.miriaminfiore.it
       paths:
-        - path: /
+        - path: /api/
           pathType: Prefix
   tls: 
-    - secretName: test-miriaminfiore-it-tls
+    - secretName: miriaminfiore-it-tls
       hosts:
-        - www.test.miriaminfiore.it
+        - www.miriaminfiore.it
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
@@ -70,9 +70,9 @@ resources: {}
   #   memory: 128Mi
 
 autoscaling:
-  enabled: true
+  enabled: false
   minReplicas: 1
-  maxReplicas: 10
+  maxReplicas: 100
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
 
