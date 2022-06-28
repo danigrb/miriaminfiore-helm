@@ -3,6 +3,16 @@ entries:
   backend-helm:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-06-28T18:14:57.247602259Z"
+    description: A Helm chart for Kubernetes
+    digest: 1409aafab477121559318fe895f57eaeaf616fdbe401d1b3cbc538288be5af53
+    name: backend-helm
+    type: application
+    urls:
+    - https://github.com/danigrb/miriaminfiore-helm/releases/download/backend-helm-0.1.2/backend-helm-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-06-28T18:08:34.178587445Z"
     description: A Helm chart for Kubernetes
     digest: 6d9d540dc9b2d51f772e5ef12a692fda28d7bad1b54a194fa743797ef85a0799
@@ -102,4 +112,4 @@ entries:
     urls:
     - https://github.com/danigrb/miriaminfiore-helm/releases/download/miriaminfiore-0.1.0/miriaminfiore-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-28T18:08:34.178628446Z"
+generated: "2022-06-28T18:14:57.247707458Z"
