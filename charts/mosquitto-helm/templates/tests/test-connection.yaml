@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "mosquitto-helm.fullname" . }}-test-connection"
+  labels:
+    {{- include "mosquitto-helm.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "mosquitto-helm.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
