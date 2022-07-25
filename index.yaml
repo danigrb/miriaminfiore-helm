@@ -122,4 +122,15 @@ entries:
     urls:
     - https://github.com/danigrb/miriaminfiore-helm/releases/download/miriaminfiore-0.1.0/miriaminfiore-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-28T18:19:00.773902523Z"
+  mosquitto-helm:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-25T18:22:24.57459657Z"
+    description: A Helm chart for Kubernetes
+    digest: e077d7fbcb4d5818d750b970d445d488cd5572df23b3e38dacc72dfc58d7b598
+    name: mosquitto-helm
+    type: application
+    urls:
+    - https://github.com/danigrb/miriaminfiore-helm/releases/download/mosquitto-helm-0.1.1/mosquitto-helm-0.1.1.tgz
+    version: 0.1.1
+generated: "2022-07-25T18:22:24.574631274Z"
